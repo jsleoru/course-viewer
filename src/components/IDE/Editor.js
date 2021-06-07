@@ -1,8 +1,7 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import MonacoEditor from 'react-monaco-editor';
 
-function Welcome() {
+function Welcome(props) {
     function editorWillMount(monaco) {
         // validation settings
         monaco.languages.typescript.typescriptDefaults.setDiagnosticsOptions({
@@ -23,12 +22,12 @@ function Welcome() {
         height='87vh'
         language="javascript"
         theme="vs-dark"
-        value={'Hello world !'}
+        value={props.code}
         options={{
             selectOnLineNumbers: true,
             quickSuggestions: true
           }}
-        onChange={()=>{}}
+        onChange={props.setCode}
         editorWillMount={editorWillMount}
         editorDidMount={()=>{}}
       />

@@ -7,7 +7,6 @@ import Button from 'react-bootstrap/Button'
 
 function Welcome() {
     return (
-        
         <Container className={'App-header'} fluid>
         <h1>JSLeo.ru</h1>
         <p style={{marginBottom: '5%'}}>Javascript с нуля</p>

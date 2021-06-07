@@ -3,6 +3,12 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ControlItem from './ControlItem'
 
 function LeftMenu(props) {
+
+    function runCode(){
+        props.setLogs([]);
+        // eslint-disable-next-line no-eval
+        eval("(async () => {" + props.code + "})()")
+    }
     return (
         <ButtonGroup 
     className="mr-2" 
@@ -12,7 +18,7 @@ function LeftMenu(props) {
   >
   
   <ControlItem
-    onClick={()=>{}}
+    onClick={runCode}
     name="play"
     text="Запустить"
   />

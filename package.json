@@ -13,7 +13,8 @@
     "monaco-editor-webpack-plugin": "1.9.0",
     "react-app-rewired": "2.1.6",
     "react-monaco-editor": "0.36.0",
-    "console-feed": "3.0.0"
+    "console-feed": "3.0.0",
+    "react-async": "10.0.1"
   },
   "scripts": {
     "start": "react-app-rewired start",
